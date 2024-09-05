@@ -1,52 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Royal Sports Club</title>
-  <style>
-    .bgi{
-      background-image: url('joinus.jpg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      
-    }
-    h1 {
-      color: rgb(254, 87, 4);
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      text-shadow: rgb(163, 16, 16);
-      font-size: 800%;
-    }
-    p{
-      text-shadow: 10px;
-      font-size: 30px;
-      font-family: monospace;
-      color: rgb(0, 0, 0);
-    }
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="demo.css">
 </head>
 <body>
-  <div class=" bgi text-center row-2 col-12">
-   
-  <h1>SPARK SPORTS CENTER</h1><br>
-  <div class="text-warning ">
-    <p style="font-family: fantasy; 
-              font-size: 40px;"
-       class="text-white bg-dark">
-       Welcome to the Royal Sports Club, where champions are made and dreams are realized...</p><br>
+    <nav class="navbar col-md-12 fixed-top navigationbar">
+        <div class="textcolor">
+           <ul class="nav">
+              <li><a class="btn text-white navitem" href="#home">Home</a></li>
+              <li><a class="btn text-white navitem" href="#about">About</a></li>
+              <li><a class="btn text-white navitem" href="#event">Event</a></li>
+              <li><a class="btn text-white navitem" href="#staff">Staff</a></li>
+              <li><a class="btn text-white navitem" href="#contact">Contact</a></li>
+           </ul>
+        </div>
+    </nav>
 
-    <p class="bg-warning">we are dedicated to fostering a vibrant and inclusive community where athletes of all levels can thrive.
-     Whether you're a seasoned pro or just starting your fitness journey, our state-of-the-art facilities and diverse range of 
-     sports programs are designed to help you achieve your personal goals.
-     Join us to experience top-notch training, supportive camaraderie, and a commitment to excellence in every game we play.
-     Discover your potential with us today!</p><br>
+  <div class="container-md mt-5 pt-5">
+    <div class="text-center">
+      <h1 class="head1" id="home">HOME LAND</h1>
+      <h2 class="head2">SPORTS ACADEMY</h2>
+    </div>
+
+    <div class="text-center">
+      <p class="mb-3 welcome">
+        <span class="text-white">" </span>Welcome to Home Land Sports Academy, where champions are made and dreams are realized... <span class="text-white">"</span>
+      </p>
+    </div>
+
+    <div class="text-center">
+      <a class="btn btn2 btn-primary" href="#register">Connect Us</a>
+    </div>
+
+    <div class="container">
+      <form method="post" action="#register">
+        <fieldset class="bdr">
+          <legend id="about" class="title mb-3">ABOUT</legend>
+          <div class="line">
+            <p>We are dedicated to fostering a vibrant and inclusive community where athletes of all levels can thrive. Whether you're a seasoned pro or just starting your fitness journey, our state-of-the-art facilities and diverse range of sports programs are designed to help you achieve your personal goals. Join us to experience top-notch training, supportive camaraderie, and a commitment to excellence in every game we play. Discover your potential with us today!</p>
+          </div>
+        </fieldset>
+
+        <fieldset class="bdr mt-4">
+          <legend id="event" class="title mb-3">EVENT</legend>
+          <dl class="description-list">
+            <dt>Tournaments</dt>
+            <dd><img src="tournament.jpg" alt="tournament" height="20%" width="50%" class="img-fluid mb-2"></dd>
+            <dd>Engage in high-stakes tournaments featuring various sports such as soccer, basketball, and tennis. Experience the thrill of competition and witness top-tier performances.</dd>
+            <hr>
+            
+            <dt>Family Events</dt>
+            <dd><img src="family.jpg" alt="family" height="50%" width="50%" class="img-fluid mb-2"></dd>
+            <dd>Enjoy a day of fun and competition with our family-friendly events, including recreational games and youth tournaments. Perfect for participants of all ages.</dd>
+            <hr>
+
+            <dt>Cultural Events</dt>
+            <dd><img src="cultural.jpg" alt="cultural" height="30%" width="50%" class="img-fluid mb-2"></dd>
+            <dd>Experience the richness of our cultural events, including traditional rituals and performances. These events offer a blend of tradition and recreation for all participants.</dd>
+          </dl>
+        </fieldset>
+
+        <fieldset class="bdr">
+          <legend id="staff" class="title mb-3">STAFF</legend>
+          <dl>
+            <dt>Sarah Johnson - Soccer Coach</dt>
+            <dd><img src="mphoto.jpg" alt="Sarah Johnson" class="img-fluid mb-2" style="height: 90px; width: 80px;"></dd>
+            <dd>With over 15 years of experience in coaching soccer at both the collegiate and professional levels, Coach Sarah Johnson brings a strategic approach to the game. Her expertise in player development and tactical planning has helped numerous athletes achieve success on the field. Under her guidance, players learn advanced techniques and game strategies that enhance their performance and teamwork.</dd>
+            <hr>
+        
+            <dt>Alex Martinez - Fitness Trainer</dt>
+            <dd><img src="mphoto.jpg" alt="Alex Martinez" class="img-fluid mb-2" style="height: 90px; width: 80px;"></dd>
+            <dd>Alex Martinez brings over 10 years of experience in personal training. He offers customized workout plans to help you achieve your fitness goals, whether it's building strength, improving endurance, or enhancing overall health. Alex also provides nutritional advice to complement your fitness routine.</dd>
+            <hr>
+        
+            <dt>Emily Roberts - Swimming Coach</dt>
+            <dd><img src="fphoto.jpg" alt="Emily Roberts" class="img-fluid mb-2" style="height: 90px; width: 80px;"></dd>
+            <dd>Emily Roberts has 8 years of experience in swimming coaching. She specializes in improving swimming techniques and developing training programs for swimmers of all levels. Emily also offers aquatic fitness sessions to help you build endurance and strength in the water.</dd>
+          </dl>
+        </fieldset>
+
+        <fieldset >
+         <fieldset class="bdr">
+          <legend id="register" class="title mb-3">CONNECT</legend>
+          <div class="">
+            <dl class="description-list">
+              <dt>Send Message</dt>
+              <div class="detail text-center">
+                <dd>
+                  <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Enter your Name" required>
+                  </div>
+                  <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="example@gmail.com" required>
+                  </div>
+                  <textarea name="message" cols="50" rows="5" placeholder="Enter your message here..." required></textarea><br>
+                  <button type="submit" class="text-center btn btn-primary">Send</button>
+                </dd>
+              </div>
+              <hr class="mt-4 mb-3">
+        <div ></div>
+        </fieldset>
+        <fieldset class="bdr">
+          <legend id="register" class="title mb-3">REGISTER</legend>
+          <div class="">
+            <dl class="description-list">
+              <dt>To become an member for our club please provide us with the following details</dt>
+              <div class="detail text-center">
+                <dd>
+                  <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Enter your Name" required>
+                  </div>
+                  <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="example@gmail.com" required>
+                  </div>
+                  <div class="mb-3">
+                    <input type="tel" class="form-control" placeholder="Enter your Number" required>
+                  </div>
+                  <div class="mb-3">
+                    <input type="file" class="form-control" placeholder="Enter your Name" required>
+                  </div>
+                  <textarea name="message" cols="50" rows="5" placeholder="Enter Your Address" required></textarea><br>
+                  <button type="submit" class="text-center btn btn-primary">Register</button>
+                </dd>
+              </div>
+              <hr class="mt-4 mb-3">
+        <div ></div>
+        </fieldset>
+        </fieldset>
+
+        <fieldset class="bdr">
+          <legend id="contact" class="title mb-3">CONTACT</legend>
+          <pre class="text-white inform">
+Email   : arnoldaport@gmail.com
+Phone   : +91 737737****
+Tel     : 2734567
+Address : Arnold Tower
+          KKR Street
+</pre>
+      </fieldset><br>
+    </form>
+      </div>
+    </div>
   </div>
 
-<div class="text-center">
-  <a class="btn btn-primary" href="joinus.html">Join Us</a>
-</div>
-</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
-</html>
+        </html>
