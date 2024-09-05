@@ -1,71 +1,199 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Royal Sports Club</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
     body {
-      background-image: url("secbg.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-size: fixed;
-      background-attachment:fixed;
-      margin: 0;
-      padding: 0;
-    }
-    .container-md {
-      background: rgba(255, 255, 255, 0.8);
-      padding: 20px;
-      border-radius: 10px;
-      max-width: 800px;
-      margin: auto;
-      margin-top: 100px;
-    }
-    h1 {
-      color: rgb(254, 87, 4);
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      text-shadow: 2px 2px rgb(163, 16, 16);
-      font-size: 5rem;
-      text-align: center;
-    }
-    p {
-      font-size: 1.875rem;
-      font-family: fantasy;
-      color: rgb(0, 0, 0);
-      text-align: center;
-      background-color: white;
-      padding: 10px;
-      border-radius: 5px;
-    }
-    ul {
-      font-size: 1.875rem;
-      color: red;
-      list-style-type: none;
-      padding: 0;
-      text-align: center;
-    }
-    .bg-dark {
-      background-color: #343a40; /* Added semicolon */
-      padding: 10px;
-      border-radius: 5px;
-    }
-    .text-white {
-      color: #ffffff; /* Added semicolon */
-    }
-  </style>
-</head>
-<body>
-  <div class="container-md">
-    <h1>SPARK SPORTS CENTER</h1>
-    <p>Train like a beast, look like a beauty</p>
-    <h3 class="bg-dark text-white">We Provide</h3>
-    <ul>
-      <li><a href="coach.html">Coaching</a></li>
-      <li><a href="facility.html">Facilities</a></li>
-      <li><a href="event.html">Events</a></li>
-    </ul>
-  </div>
-</body>
-</html>
+    background-image: url("bgi1.jpg");
+    background-repeat: repeat-y;
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+
+.navigationbar {
+    background-color: #23384f;
+    padding: 4px;
+}
+
+.navigationbar .btn1 {
+    color: #fff;
+    margin: 0 15px;
+    
+}
+
+.textcolor{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navigationbar .btn1:hover {
+    background-color: #004080;
+}
+
+
+.head1 {
+    font-size: 3rem;
+    color: #9c814c;
+    font-weight: bolder;
+    margin-top: 60px;
+    text-shadow: #6d5b2eac;
+}
+
+.head2 {
+    font-size: 2rem;
+    color: #0066cc;
+    font-weight: 900;
+}
+
+.welcome {
+    font-family: fantasy; 
+    font-size: 2.5rem; 
+    font-style: italic;
+    font-weight: bolder;
+    color: rgba(115, 160, 216, 0.736);
+    -ms-text-kashida-space: 20%;
+}
+
+.btn2 {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: #0066cc;
+    border: none;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.btn2:hover {
+    background-color: #004080;
+}
+
+.bdr {
+    border: 2px solid #004080;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #e6f2ff85;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 1.8rem;
+    color: #003366;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #004080;
+    margin-bottom: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.line{
+    margin-left: 20px;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p {
+    font-size: 1rem;
+    color: #333;
+}
+
+
+.description-list dt {
+    font-size: 1.4rem;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, 
+    monospace;
+    color: #003366;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.description-list dd {
+    margin-left: 20px;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, 
+    sans-serif;
+}
+
+img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+
+.inform {
+    background-color: #004080;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.inform a {
+    color: #66ccff;
+    text-decoration: none;
+}
+
+.inform a:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color:#006cffa7;
+  border-radius: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: ;
+  color: ;
+  margin-top: 2px;
+}
+
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #66ccff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.detail {
+    padding: 0 20px;
+}
+.margine{
+    margin-right: 10%;
+    margin-leftt: 10%;
+}
